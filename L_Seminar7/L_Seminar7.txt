@@ -1,0 +1,8 @@
+sudo apt install docker.io
+mkdir nginx-conf
+nano nginx-conf/nginx.conf
+nano .env
+nano docker-compose.yml
+docker-compose up -d
+docker-compose stop webserver
+docker-compose up -d --force-recreate --no-deps webserver
